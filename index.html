@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CPA Study Hub</title>
+  <meta name="description" content="A simple study hub for CPA students.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="#">CPA Study Hub</a>
+      <nav>
+        <a href="#subjects">Subjects</a>
+        <a href="#resources">Resources</a>
+        <a href="#quiz">Quiz</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">STUDY SMART • PRACTICE DAILY</p>
+          <h1>Your CPA study companion.</h1>
+          <p class="hero-text">
+            Organize your CPA preparation with subject guides, study resources,
+            practice questions, and a simple quiz tool.
+          </p>
+          <a class="button" href="#subjects">Start Studying</a>
+        </div>
+        <div class="hero-card">
+          <span>Today's focus</span>
+          <strong>Consistency</strong>
+          <p>Set a goal, study a topic, then test yourself.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="subjects" class="section">
+      <div class="container">
+        <h2>CPA Subjects</h2>
+        <p class="section-intro">Choose a subject and build your study plan.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Financial Accounting</h3>
+            <p>Review financial reporting concepts, statements, and accounting principles.</p>
+            <button onclick="showMessage('Financial Accounting')">Study topic</button>
+          </article>
+          <article class="card">
+            <h3>Auditing</h3>
+            <p>Practice audit concepts, evidence, risk, controls, and reporting.</p>
+            <button onclick="showMessage('Auditing')">Study topic</button>
+          </article>
+          <article class="card">
+            <h3>Taxation</h3>
+            <p>Organize tax concepts, rules, computations, and practice questions.</p>
+            <button onclick="showMessage('Taxation')">Study topic</button>
+          </article>
+          <article class="card">
+            <h3>Business & Law</h3>
+            <p>Review business concepts, ethics, law, and professional responsibilities.</p>
+            <button onclick="showMessage('Business & Law')">Study topic</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="section alt">
+      <div class="container">
+        <h2>Study Resources</h2>
+        <div class="resource-list">
+          <div><strong>📚 Notes</strong><span>Add your own chapter notes and summaries.</span></div>
+          <div><strong>📝 Practice Questions</strong><span>Add questions and explanations for revision.</span></div>
+          <div><strong>⏱ Study Planner</strong><span>Plan daily and weekly study sessions.</span></div>
+          <div><strong>📊 Progress</strong><span>Track completed topics and practice results.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section">
+      <div class="container quiz-box">
+        <h2>Quick CPA Quiz</h2>
+        <p>Which financial statement reports assets, liabilities, and equity?</p>
+        <div class="quiz-options">
+          <button onclick="answer(false)">Income Statement</button>
+          <button onclick="answer(true)">Balance Sheet</button>
+          <button onclick="answer(false)">Cash Flow Statement</button>
+        </div>
+        <p id="quiz-result" class="result"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 CPA Study Hub • Built for learning</p>
+      <p class="disclaimer">Educational website. Verify current CPA requirements and official exam information with the relevant accounting authority.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
